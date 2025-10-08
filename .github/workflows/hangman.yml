@@ -55,4 +55,4 @@ jobs:
         
       # 3. Run the tests
       - name: Run tests
-        run: cabal test all
+        run: cd hangman || cabal test all
