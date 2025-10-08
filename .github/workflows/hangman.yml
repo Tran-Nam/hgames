@@ -51,7 +51,7 @@ jobs:
       - name: Build project
         # --test-suite and --no-run-tests ensures all dependencies are built, 
         # but defers running the tests to the next step.
-        run: cabal build all
+        run: cd hangman || cabal build all
         
       # 3. Run the tests
       - name: Run tests
